@@ -11,6 +11,7 @@
 @implementation TTParser
 
 #define XPATH_QUERY @"//div[@id='user-songs']/div[@class='song']"
+#define POPULARITY_THRESHOLD 20
 
 + (id)parserWithData:(NSData *)data
 {
@@ -61,9 +62,11 @@
         }
         
         // print song info
-        NSString *songDescription = [newSong.description stringByAppendingString:@"\n"];
-        NSData *songData = [songDescription dataUsingEncoding:NSUTF8StringEncoding];
-        [stdout writeData:songData];
+        if ([newSong.stats.popularity integerValue] >= POPULARITY_THRESHOLD) {
+            NSString *songDescription = [newSong.description stringByAppendingString:@"\n"];
+            NSData *songData = [songDescription dataUsingEncoding:NSUTF8StringEncoding];
+            [stdout writeData:songData];
+        }
         
     }
     
