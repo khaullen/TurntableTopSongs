@@ -30,6 +30,8 @@
 {
     TFHpple *songParser = [TFHpple hppleWithHTMLData:self.data];
     NSArray *songNodes = [songParser searchWithXPathQuery:XPATH_QUERY];
+    NSFileHandle *stdout = [NSFileHandle fileHandleWithStandardOutput];
+
     for (TFHppleElement *element in songNodes) {
         TTSong *newSong = [TTSong song];
         
@@ -59,7 +61,10 @@
         }
         
         // print song info
-        NSLog(@"newSong: %@", newSong);
+        NSString *songDescription = [newSong.description stringByAppendingString:@"\n"];
+        NSData *songData = [songDescription dataUsingEncoding:NSUTF8StringEncoding];
+        [stdout writeData:songData];
+        
     }
     
     return 0;

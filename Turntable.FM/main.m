@@ -20,7 +20,7 @@ int main(int argc, const char * argv[])
         }
         
         NSFileHandle *input = [NSFileHandle fileHandleWithStandardInput];
-        NSData *data = [NSData dataWithData:[input readDataToEndOfFile]];
+        NSData *data = [input readDataToEndOfFile];
         
         //NSURL *tutorialsUrl = [NSURL URLWithString:@"http://ttstats.info/room/indie_while_you_work"];
         //NSData *tutorialsHtmlData = [NSData dataWithContentsOfURL:tutorialsUrl];
