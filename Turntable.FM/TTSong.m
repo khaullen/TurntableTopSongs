@@ -29,7 +29,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@ by %@ [%@]", self.songTitle, self.artistName, self.stats.popularity];
+    return [NSString stringWithFormat:@"%@ by %@ (%@)", self.songTitle, self.artistName, self.stats.popularity];
 }
 
 @end
