@@ -1,0 +1,5 @@
+This is a command line tool that parses Turntable.FM song histories and outputs a popularity score (determined by awesomes, lames, hearts, and listeners) by which to compare the relative popularity of songs played.
+
+An example page can be found at http://ttstats.info/room/indie_while_you_work
+
+Pipe in the page data with curl.
