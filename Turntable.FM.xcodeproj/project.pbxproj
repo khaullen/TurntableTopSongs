@@ -10,6 +10,13 @@
 		3BA167F916CAF43400003179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA167F816CAF43400003179 /* Foundation.framework */; };
 		3BA167FC16CAF43400003179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA167FB16CAF43400003179 /* main.m */; };
 		3BA1680016CAF43400003179 /* Turntable_FM.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BA167FF16CAF43400003179 /* Turntable_FM.1 */; };
+		3BA1680C16CC446A00003179 /* TTSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1680B16CC446A00003179 /* TTSong.m */; };
+		3BA1684616CD823900003179 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1684116CD823900003179 /* TFHpple.m */; };
+		3BA1684716CD823A00003179 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1684316CD823900003179 /* TFHppleElement.m */; };
+		3BA1684816CD823A00003179 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1684516CD823900003179 /* XPathQuery.m */; };
+		3BA1684B16CD82F900003179 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA1684A16CD82F900003179 /* libxml2.dylib */; };
+		3BA1684E16CD84CE00003179 /* TTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1684D16CD84CE00003179 /* TTParser.m */; };
+		3BA1685116CD9C9F00003179 /* TTSongStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1685016CD9C9F00003179 /* TTSongStats.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +38,19 @@
 		3BA167FB16CAF43400003179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BA167FE16CAF43400003179 /* Turntable.FM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turntable.FM-Prefix.pch"; sourceTree = "<group>"; };
 		3BA167FF16CAF43400003179 /* Turntable_FM.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Turntable_FM.1; sourceTree = "<group>"; };
+		3BA1680A16CC446A00003179 /* TTSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSong.h; sourceTree = "<group>"; };
+		3BA1680B16CC446A00003179 /* TTSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSong.m; sourceTree = "<group>"; };
+		3BA1684016CD823900003179 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		3BA1684116CD823900003179 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		3BA1684216CD823900003179 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		3BA1684316CD823900003179 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		3BA1684416CD823900003179 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		3BA1684516CD823900003179 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		3BA1684A16CD82F900003179 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		3BA1684C16CD84CE00003179 /* TTParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTParser.h; sourceTree = "<group>"; };
+		3BA1684D16CD84CE00003179 /* TTParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTParser.m; sourceTree = "<group>"; };
+		3BA1684F16CD9C9F00003179 /* TTSongStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSongStats.h; sourceTree = "<group>"; };
+		3BA1685016CD9C9F00003179 /* TTSongStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSongStats.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA1684B16CD82F900003179 /* libxml2.dylib in Frameworks */,
 				3BA167F916CAF43400003179 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +69,7 @@
 		3BA167EC16CAF43400003179 = {
 			isa = PBXGroup;
 			children = (
+				3BA1684A16CD82F900003179 /* libxml2.dylib */,
 				3BA167FA16CAF43400003179 /* Turntable.FM */,
 				3BA167F716CAF43400003179 /* Frameworks */,
 				3BA167F616CAF43400003179 /* Products */,
@@ -74,7 +96,14 @@
 			isa = PBXGroup;
 			children = (
 				3BA167FB16CAF43400003179 /* main.m */,
+				3BA1684C16CD84CE00003179 /* TTParser.h */,
+				3BA1684D16CD84CE00003179 /* TTParser.m */,
+				3BA1680A16CC446A00003179 /* TTSong.h */,
+				3BA1680B16CC446A00003179 /* TTSong.m */,
+				3BA1684F16CD9C9F00003179 /* TTSongStats.h */,
+				3BA1685016CD9C9F00003179 /* TTSongStats.m */,
 				3BA167FF16CAF43400003179 /* Turntable_FM.1 */,
+				3BA1684916CD824500003179 /* hpple */,
 				3BA167FD16CAF43400003179 /* Supporting Files */,
 			);
 			path = Turntable.FM;
@@ -86,6 +115,19 @@
 				3BA167FE16CAF43400003179 /* Turntable.FM-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA1684916CD824500003179 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				3BA1684016CD823900003179 /* TFHpple.h */,
+				3BA1684116CD823900003179 /* TFHpple.m */,
+				3BA1684216CD823900003179 /* TFHppleElement.h */,
+				3BA1684316CD823900003179 /* TFHppleElement.m */,
+				3BA1684416CD823900003179 /* XPathQuery.h */,
+				3BA1684516CD823900003179 /* XPathQuery.m */,
+			);
+			name = hpple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA167FC16CAF43400003179 /* main.m in Sources */,
+				3BA1680C16CC446A00003179 /* TTSong.m in Sources */,
+				3BA1684616CD823900003179 /* TFHpple.m in Sources */,
+				3BA1684716CD823A00003179 /* TFHppleElement.m in Sources */,
+				3BA1684816CD823A00003179 /* XPathQuery.m in Sources */,
+				3BA1684E16CD84CE00003179 /* TTParser.m in Sources */,
+				3BA1685116CD9C9F00003179 /* TTSongStats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +258,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turntable.FM/Turntable.FM-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -219,6 +268,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turntable.FM/Turntable.FM-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
